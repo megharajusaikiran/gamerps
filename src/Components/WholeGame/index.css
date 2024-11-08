@@ -1,0 +1,108 @@
+.wholediv {
+  background-color: #223a5f;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.updiv {
+  border-style: solid;
+  border-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 60%;
+  height: 140px;
+}
+.images {
+  height: 180px;
+  width: 180px;
+}
+.scorediv {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding: 15px;
+}
+.score {
+  font-family: 'Bree Serif';
+  margin: 0px;
+  color: #223a5f;
+}
+.zero {
+  color: #223a5f;
+  font-family: 'Roboto';
+  margin: 0px;
+}
+.itemnames {
+  color: white;
+  font-family: 'Bree Serif';
+  margin: 2px;
+  font-size: 22px;
+}
+.resultwhole {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.resultimg {
+  height: 190px;
+  width: 190px;
+}
+.resultone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.you {
+  color: white;
+  font-weight: bold;
+}
+.poi {
+  color: white;
+}
+.playagain {
+  background-color: white;
+
+  color: #223a5f;
+  font-family: 'Bree Serif';
+  border-style: none;
+  margin-left: 35px;
+  height: 25px;
+}
+.rulesbutton {
+  font-family: 'Bree Serif';
+  background-color: white;
+  border-style: none;
+  color: #223a5f;
+  padding: 8px;
+  background-color: none;
+}
+.popupimage {
+  height: 500px;
+  width: 500px;
+}
+.popupwindow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.close {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
