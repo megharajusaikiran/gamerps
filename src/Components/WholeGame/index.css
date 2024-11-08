@@ -31,6 +31,7 @@
   align-items: center;
   height: 100px;
   padding: 15px;
+  font-family: 'Roboto';
 }
 .score {
   font-family: 'Bree Serif';
@@ -39,7 +40,7 @@
 }
 .zero {
   color: #223a5f;
-  font-family: 'Roboto';
+  font-family: Roboto;
   margin: 0px;
 }
 .itemnames {

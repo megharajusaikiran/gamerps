@@ -6,7 +6,7 @@ import {RiCloseLine} from 'react-icons/ri'
 
 class WholeGame extends Component {
   state = {
-    score: 0,
+    score: '0',
     clickedImageurl: '',
     randomImageurl: '',
     resultpage: false,
@@ -94,7 +94,9 @@ class WholeGame extends Component {
           </div>
           <div className="scorediv">
             <p className="score">Score</p>
-            <p className="zero">{score}</p>
+            <p style={{fontFamily: 'Roboto'}} className="zero">
+              {score}
+            </p>
           </div>
         </div>
 
@@ -119,7 +121,7 @@ class WholeGame extends Component {
               </div>
             </div>
             <div>
-              <h1 className="poi">{result}</h1>
+              <p className="poi">{result}</p>
               <button
                 type="button"
                 onClick={this.playagain}
@@ -131,32 +133,29 @@ class WholeGame extends Component {
           </>
         ) : (
           <div className="downdiv">
-            <button data-testid="rockButton" type="button">
-              <img
-                src={list[0].imageUrl}
-                onClick={() => this.ClickedImge(list[0].id)}
-                key={list[0].id}
-                className="images"
-                alt={list[0].id}
-              />
+            <button
+              data-testid="rockButton"
+              onClick={() => this.ClickedImge(list[0].id)}
+              key={list[0].id}
+              type="button"
+            >
+              <img className="images" alt={list[0].id} src={list[0].imageUrl} />
             </button>
-            <button data-testid="scissorsButton" type="button">
-              <img
-                src={list[1].imageUrl}
-                onClick={() => this.ClickedImge(list[0].id)}
-                key={list[1].id}
-                className="images"
-                alt={list[1].id}
-              />
+            <button
+              data-testid="scissorsButton"
+              onClick={() => this.ClickedImge(list[1].id)}
+              key={list[1].id}
+              type="button"
+            >
+              <img className="images" alt={list[1].id} src={list[1].imageUrl} />
             </button>
-            <button data-testid="paperButton" type="button">
-              <img
-                src={list[2].imageUrl}
-                onClick={() => this.ClickedImge(list[0].id)}
-                key={list[2].id}
-                className="images"
-                alt={list[2].id}
-              />
+            <button
+              data-testid="paperButton"
+              onClick={() => this.ClickedImge(list[2].id)}
+              key={list[2].id}
+              type="button"
+            >
+              <img className="images" alt={list[2].id} src={list[2].imageUrl} />
             </button>
           </div>
         )}
